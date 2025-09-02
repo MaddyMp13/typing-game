@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <style>
+        body {
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            width: 450px;
+            margin: 50px auto;
+            border-radius: 20px;
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        .letter-Box {
+            padding: 30px;
+            margin: 50px auto;
+            border-radius: 10px;
+            height: 80px;
+            width: 80px;
+            background-color: #E8F5E9;
+            border: 3px solid #4CAF50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+
+        }
+
+        .btn:disabled {
+            background-color: #c5f3c7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1 style="text-align: center;">Typing Speed Test </h1>
+        <div style="display: flex;justify-content: space-around; font-weight: 700;">
+            <p>⏱ Time: <span id="timer">10</span>s</p>
+            <p>🏆 Score: <span id="score">0</span></p>
+        </div>
+        <div id="get-ready" style="text-align: center; ">
+            <p>Get Ready in <span id="count">...</span></p>
+        </div>
+        <div>
+            <div class="letter-Box">
+                <p id="character"
+                    style="font-size: 80px; margin: 0; font-weight: 700; color: #4CAF50; text-align: center;">
+                    ?
+                </p>
+            </div>
+        </div>
+        <div style="text-align: center; font-size: 15px;">
+            <p>
+                Press the key that matches the letter above!
+            </p>
+        </div>
+        <div style=" display: flex; justify-content: center;">
+            <button onclick="ready()" class="btn" id="button">
+                Start Game
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
