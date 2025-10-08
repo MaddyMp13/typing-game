@@ -1,0 +1,1 @@
+https://testtypingspeedgame.netlify.app/
